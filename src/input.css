@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-sm: 600px;
+    --breakpoint-md: 960px;
+}
+
+body {
+    background-color: #101010;
+}
+
+.background {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 100%), url(./img/netflixbg.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.mainbg {
+    background-image: radial-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.60) 100%), url(./img/netflixbg.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 100%, 83% 98%, 70% 97%, 57% 97%, 44% 97%, 32% 97%, 19% 98%, 0 100%, 0 0);
+}
+
+.list-numbers {
+    -webkit-text-stroke: 2px #fff;
+}
+
+.scroll-invisible {
+    scrollbar-width: none; /* Firefox */
+}
